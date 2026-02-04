@@ -1,0 +1,782 @@
+
+        /* Other */
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *::before,
+        *::after {
+             box-sizing: inherit;
+        }
+
+        body {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 0;
+            background: #f1f1f1;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header */
+
+        .header-container {
+            padding-top: 30px;
+        }
+
+        .header-flex-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-tel {
+            margin-left: 40px;
+            color: #666666;
+            font-size: 20px;
+            transition: color 0.4s ease-in-out , outline 0.3s ease-in-out;
+        }
+
+        .header-tel:hover {
+            color: #CC9933;
+        }
+        
+        .header-tel:focus {
+            outline: 1px solid #CC9933;
+        }
+
+        .header-tel:active {
+            color: #A47312;
+            outline: none;
+        }
+
+        .header-margin-auto {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .header-profile {
+            align-items: center;
+            display: flex;
+            color: #CC9933;
+            transition: color 0.4s ease-in-out , outline 0.3s ease-in-out;
+        }
+
+        .header-profile:hover {
+            color: #F0BF5F;
+        }
+
+        
+        .header-profile:focus {
+            outline: 1px solid #CC9933;
+        }
+
+        .header-profile:active {
+            color: #A47312;
+            outline: none;
+        }
+
+        .header-svg {
+            margin-right: 10px;
+        }
+
+        .header-background {
+            margin-top: 40px;
+            background: white;
+            border-radius: 10px;
+            padding: 12px;
+        }
+
+        .header-flex-list {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-list {
+            display: flex;
+        }
+
+        .header-btn-margin-auto {
+            margin-left: auto;
+        }
+
+        .header-btn {
+            margin-right: 10px;
+            border-radius: 10px;
+            border: 1px solid #CC9933;
+            color: #CC9933;
+            padding: 12px 19px 12px 19px;
+            background: white;
+            cursor: pointer;
+            transition: background 0.4s ease-in-out , color 0.4s ease-in-out;
+        }
+
+        .header-btn:hover {
+            background: #CC9933;
+            color: white;
+        }
+
+        .header-btn:active {
+            background: #A47312;
+            color: white;
+        }
+
+        .header-btn-margin {
+            margin-right: 30px;
+        }
+
+        .header-item {
+            list-style: none;
+        }
+
+        .header-item:not(:first-child) {
+            margin-left: 42px;
+        }
+
+        .header-detalis {
+            color: #666666;
+            padding: 5px;
+            font-size: 16px;
+            transition: color 0.4s ease-in-out , outline 0.3s ease-in-out;
+        }
+
+        .header-detalis:hover {
+            color: #CC9933;
+        }
+
+        .header-detalis:focus {
+            outline: 1px solid #CC9933;
+        }
+
+        .header-detalis:active {
+            color: #A47312;
+            outline: none;
+        }
+
+        /* Main */
+
+        .main {
+            padding-top: 40px;
+        }
+
+        /* Article */
+
+        .special-article {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .special-article-left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-image-one {
+            background-image: url(../img/maldives-1.png);
+            position: relative;
+            z-index: 1;
+        }
+
+        .article-image-two {
+            background-image: url(../img/maldives-2.png);
+            position: relative;
+            z-index: 1;
+        }
+
+        .article-image-three {
+            background-image: url(../img/maldives-3.png);
+            position: relative;
+        }
+
+        .article-image-one::after {
+            content: "";
+            position: absolute;
+            background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%65.7%);;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 15px;
+            z-index: -1;
+        }
+
+        .article-image-two::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%65.7%);;
+            border-radius: 15px;
+            z-index: -1;
+        }
+
+        .article-block {
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 15px;
+            padding: 40px 108px 40px 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .article-block {
+            margin-bottom: 28px;
+        }
+
+        .article-height-one {
+            height: 258px;
+            width: 573px;
+        }
+
+        .article-height-two {
+            height: 544px;
+            width: 593px;
+            padding: 200px 230px 40px 45px; 
+        }
+
+        .text-article-title {
+            color: #FFFFFF;
+            width: 330px;
+            font-size: 40px;
+            margin: 0;
+        }
+
+        .text-article-title-two {
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        .article-span {
+            color: #FFFFFF;
+            font-size: 20px;
+        }
+
+        .article-detalis {
+            color: #F0BF5F;
+        }
+
+        .article-detalis svg {
+            transition: margin 0.4s ease-in-out;
+        }
+
+        .article-detalis:hover svg {
+            margin-left: 22px;
+        }
+
+        .article-span-two {
+            font-size: 30px;
+        }
+
+        .article-detalis {
+            display: flex;
+            align-items: center;
+            transition: color 0.4s ease-in-out;
+        }
+
+        .article-svg {
+            margin-left: 7px;
+        }
+
+        .article-detalis:focus::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;        
+            width: 100%;
+            height: 100%;
+            outline: 1px solid #CC9933;
+            outline-offset: 6px;
+            transition: opacity 0.4s ease-in-out;
+        }
+
+        .article-detalis:active {
+            color: white;
+        }
+
+        .article-detalis:active::before {
+            opacity: 0;
+        }
+
+        /* Section */ 
+
+        .text-title-section {
+            font-size: 40px;
+            color: #333333;
+            margin: 0 0 20px 40px;
+        }
+
+        .section {
+            margin-top: 60px;
+        }
+
+        /* About Us */ 
+
+        .text-about-us {
+            width: 860px;
+            line-height: 200%;
+        }
+
+        /* Section-one */
+
+        .section-card-logo-one {
+            background-image: url(../img/services-one.png);
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .section-card-logo-two {
+            background-image: url(../img/services-two.png);
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .section-card-logo-three {
+            background-image: url(../img/services-three.png);
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .card-detalis:focus::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            outline: 1px solid #CC9933;
+            outline-offset: 6px;
+        }
+
+        .section-card-logo-four {
+            background-image: url(../img/services-four.png);
+            background-repeat: no-repeat;
+        }
+
+        .section-item-card {
+            padding: 191px 120px 35px 45px;
+            list-style: none;
+            background-color: white;
+            border-radius: 15px;
+        }
+
+        .text-card {
+            width: 402px;
+        }
+        
+        .section-list-card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card-svg {
+            margin-left: 10px;
+        }
+
+        .card-detalis {
+            color: #CC9933;
+            transition: color 0.4s ease-in-out;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-detalis:hover {
+            color: #F0BF5F;
+        }
+
+        .card-detalis:active {
+            color: #A47312;
+        }
+
+        .card-detalis:active::before {
+            opacity: 0;
+        }
+
+        .card-detalis svg {
+            transition: margin 0.4s ease-in-out;
+        }
+
+        .card-detalis:hover svg {
+            margin-left: 22px;
+        }
+
+        /* Advantages */ 
+
+        .section-list-advantages {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
+
+        .item-card-advantages {
+            list-style: none;
+            padding: 116px 42px 23px 45px;
+            background-color: white;
+            border-radius: 15px;
+            background-position-x: 50px;
+            background-position-y: 50px;
+            margin: 0 16px 22px 0 ;
+        }
+
+        .text-advantages {
+            width: 189px;
+            line-height: 200%;
+        }
+
+        .advantages-logo-one {
+            background-image: url(../img/advantages-one.png);
+            background-repeat: no-repeat;
+        }
+
+        .advantages-logo-two {
+            background-image: url(../img/advantages-two.png);
+            background-repeat: no-repeat;
+        }
+
+        .advantages-logo-three {
+            background-image: url(../img/advantages-three.png);
+            background-repeat: no-repeat;
+        }
+
+        .advantages-logo-four {
+            background-image: url(../img/advantages-four.png);
+            background-repeat: no-repeat;
+        }
+
+        .advantages-logo-five {
+            background-image: url(../img/advantages-five.png);
+            background-repeat: no-repeat;
+        }
+
+        .advantages-logo-six {
+            background-image: url(../img/advantages-six.png);
+            background-repeat: no-repeat;
+        }
+
+        .advantages-logo-seven {
+            background-image: url(../img/advantages-seven.png);
+            background-repeat: no-repeat;
+        }
+
+        .advantages-logo-eight {
+            background-image: url(../img/advantages-eight.png);
+            background-repeat: no-repeat;
+        }
+
+        /* Accommodation */ 
+
+        .section-list-accommodation {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+            justify-content: space-between;
+        }
+
+        .item-card-accommodation {
+            margin-bottom: 30px;
+            background-color: white;
+            border-radius: 15px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            width: 374px;
+        }
+
+        .padding-accommodation {
+            padding: 10px 0 50px 50px;
+        }
+
+        .strong-text-accommodation {
+            font-size: 20px;
+        }
+
+        .text-accommodation {
+            margin: 0 0 20px 0;
+        }
+
+        .text-accommodation-margin {
+            margin: 0 0 30px 0;
+        }
+
+        .flex-accommodation {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .stars-accommodation {
+            margin-right: 50px;
+        }
+
+        .accommodation-detalis {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            justify-content: center;
+            margin-top: auto;
+            margin-bottom: 30px;
+        }
+
+        .accommodation-image {
+            background-image: url(../img/accommodation-nine.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        .accommodation-svg {
+            margin-left: 10px;
+        }
+
+        /* Tour */ 
+
+        .section-background {
+            background: #E9E9E9;
+            padding: 30px 17px 40px 17px;
+            border-radius: 15px;
+        }
+
+        .form {
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 15px;
+            padding: 17px 20px;
+            align-items: center;
+            width: 1080px;
+            margin-left: 25px; 
+        }
+
+        .input {
+            border: none;
+        }
+
+        .input-bottom {
+            border-bottom: 1px solid #E9E9E9;
+        }
+
+        .select {
+            border: none;
+        }
+
+        .text-tour  {
+            font-size: 12px;
+        }
+
+        .tour-btn {
+            width: 108px;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        /* Contacts */
+
+        .background {
+            background: white;
+            border-radius: 15px;
+            display: flex;
+            background-image: url(../img/office.png);
+            background-repeat: no-repeat;
+            padding: 45px;
+            background-position-x: 470px;
+            background-position-y: 42px;
+        }
+
+        .list-contacts-section {
+            margin: 0;
+            padding: 0;
+        }
+
+        .text-title-contacts {
+            margin: 0;
+            padding: 0;
+        }
+
+        .item-contacts-section {
+            list-style: none;
+            border-bottom: 1px solid #e9e9e9;
+            display: flex;
+            margin-bottom: 25px;
+            width: 355px;
+        }
+
+        .contacts-bottom {
+            margin-bottom: 25px;
+        }
+
+        .contacts-margin {
+            margin-left: 85px;
+        }
+
+        .flex-contacts {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contacts-detalis-phone {
+            margin-left: 45px;
+            color: #CC9933;
+            line-height: 1.5;
+        }
+
+        .contacts-detalis-email {
+            color: #CC9933;
+        }
+
+        .address {
+            width: 229px;
+            margin-left: 80px;
+        }
+
+        .contacts-btn {
+            padding: 20px 30px 20px 30px;
+        }
+
+        .contacts-text {
+            width: 214px;
+            margin: 0;
+            padding: 0;
+            margin-left: 67px;
+        }
+
+        .hover-section-one {
+            transition: color 0.4s ease-in-out , outline 0.4s ease-in-out;
+        }
+
+        .hover-section-one:hover {
+            color: #F0BF5F;
+        }
+
+        .hover-section-one:focus {
+            outline: 1px solid #CC9933;
+            outline-offset: 3px;
+        }
+
+        .hover-section-one:active {
+            color: #A47312;
+        }
+
+        /* Footer */
+
+        .footer {
+            padding-top: 70px;
+            padding-bottom: 40px;
+        }
+
+        .footer-background {
+            background: #333333;
+            border-radius: 15px;
+            background-image: url(../img/sun.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-position-x: 740px;
+        }
+
+        .footer-flex {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 50px 50px 50px;
+        }
+
+        .footer-flex-two {
+            margin-right: 50px;
+        }
+
+        .footer-address {
+            padding: 0;
+            width: 302px;
+            color: white;
+            line-height: 190%;
+        }
+
+        .footer-address-two {
+            color: white;
+            width: 359px;
+        }
+
+        .text-footer {
+            width: 302px;
+            color: white;
+            line-height: 190%;
+        }
+
+        .footer-flex-three {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+            margin-top: 25px;
+        }
+
+        .footer-column:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        .footer-detalis {
+            color: #CC9933;
+            margin-bottom: 7px;
+        }
+
+        .footer-svg {
+            margin-bottom: 15px;
+        }
+
+        .footer-detalis-svg svg path {
+            transition: fill 0.4s ease-in-out;
+        }
+
+        .footer-detalis-svg:hover svg path {
+            fill: #CC9933;
+        }
+
+        .text-footer-margin:not(:last-child) {
+            margin-bottom: 35px;
+        }
+
+        .hover {
+            width: 120px;
+            transition: color 0.4s ease-in-out , outline 0.4s ease-in-out;
+        }
+
+        .hover:hover {
+            color: #F0BF5F;
+        }
+
+        .hover:focus {
+            outline: 1px solid #CC9933;
+            outline-offset: 6px;
+        }
+
+        .hover:active {
+            color: #A47312;
+        }
